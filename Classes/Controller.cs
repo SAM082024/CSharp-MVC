@@ -21,6 +21,13 @@ public class Controller
         
         while (isRunning)
         {
+            Console.WriteLine("Velkommen til Video Game Manager");
+            Console.WriteLine("1. Legg til nytt spill");
+            Console.WriteLine("2. Vis alle spill");
+            Console.WriteLine("3. Avslutt");
+            Console.Write("\nVelg et alternativ, 1-3: \n");
+
+            string? choice = Console.ReadLine();
 
         }
     }
