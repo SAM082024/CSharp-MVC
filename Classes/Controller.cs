@@ -29,6 +29,36 @@ public class Controller
 
             string? choice = Console.ReadLine();
 
+            switch (choice)
+            {
+                case "1":
+                    Console.Write("\nSkriv inn tittel: ");
+                    string title = Console.ReadLine() ?? string.Empty;
+
+                    Console.Write("Skriv inn år: ");
+                    int year = int.Parse(Console.ReadLine() ?? "0");
+
+                    Console.Write("Skriv inn sjanger: ");
+                    string genre = Console.ReadLine() ?? string.Empty;
+
+                    Console.Write("Skriv inn utvikler: ");
+                    string developer = Console.ReadLine() ?? string.Empty;
+
+                    AddGame(title, year, genre, developer);
+                    break;
+                case "2":
+                    _view.displayVideoGames();
+                    break;
+                
+                case "3":
+                    isRunning = false;
+                    Console.WriteLine("\nAvslutter programmet..\n");
+                    break;
+                
+                default:
+                    Console.WriteLine("\nUgyldig valg, prøv igjen\n");
+                    break;
+            }
         }
     }
 }
