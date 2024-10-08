@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Model model = new Model();
+        View view = new View(model);
+
+        Controller controller = new Controller(model, view);
+        controller.Run();
     }
 }
