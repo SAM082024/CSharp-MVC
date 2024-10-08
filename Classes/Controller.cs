@@ -14,4 +14,14 @@ public class Controller
         _model.AddGame(title, year, genre, developer);
         Console.WriteLine("Game added successfully!");
     }
+    
+    public void Run()
+    {
+        bool isRunning = true;
+        
+        while (isRunning)
+        {
+
+        }
+    }
 }
