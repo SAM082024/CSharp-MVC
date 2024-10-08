@@ -8,4 +8,10 @@ public class Controller
         _model = model;
         _view = view;
     }
+
+    public void AddGame(string title, int year, string genre, string developer)
+    {
+        _model.AddGame(title, year, genre, developer);
+        Console.WriteLine("Game added successfully!");
+    }
 }
