@@ -21,4 +21,8 @@ public class Model
             new() { Title = "gameTitle", Year = 2000, Genre = "First-Person-Shooter", Developer = "gameDev"},
         };
     }
+    public void AddGame(string title, int year, string genre, string developer)
+    {
+        Games.Add(new VideoGame { Title = title, Year = year, Genre = genre, Developer = developer});
+    }
 }
