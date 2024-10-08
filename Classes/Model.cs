@@ -16,9 +16,9 @@ public class Model
     {
         Games = new List<VideoGame>
         {
-            new() { Title = "gameTitle", Year = 2000, Genre = "First-Person-Shooter", Developer = "gameDev"},
-            new() { Title = "gameTitle", Year = 2000, Genre = "First-Person-Shooter", Developer = "gameDev"},
-            new() { Title = "gameTitle", Year = 2000, Genre = "First-Person-Shooter", Developer = "gameDev"},
+            new() { Title = "Halo", Year = 2001, Genre = "First-Person-Shooter", Developer = "Bungie Studios"},
+            new() { Title = "Assassin's Creed", Year = 2007, Genre = "Open World, Action", Developer = "Ubisoft Montreal"},
+            new() { Title = "Quake", Year = 1996, Genre = "First-Person-Shooter, Action", Developer = "id Software"},
         };
     }
     public void AddGame(string title, int year, string genre, string developer)
